@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\VizWiz.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{059CE0DF-B29B-468E-87C3-51ECBF83F01A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\VizWiz.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\VizWizEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FB626E67-B3C8-4862-A427-1D88FE860E28}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\VizWiz">
+      <UniqueIdentifier>{0375BC21-F442-4AA9-99F4-55EDA772D08B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VizWiz\SpectralVisualizer.cpp">
+      <Filter>Source\VizWiz</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VizWiz\SpectralVisualizer.h">
+      <Filter>Source\VizWiz</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\VizWiz\VizWiz.Build.cs">
+      <Filter>Source\VizWiz</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\VizWiz\VizWiz.cpp">
+      <Filter>Source\VizWiz</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VizWiz\VizWiz.h">
+      <Filter>Source\VizWiz</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\VizWiz\VizWizGameModeBase.cpp">
+      <Filter>Source\VizWiz</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VizWiz\VizWizGameModeBase.h">
+      <Filter>Source\VizWiz</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
