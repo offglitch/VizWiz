@@ -58,7 +58,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpectralVisualizer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASpectralVisualizer)
 
 
-#define VizWiz_Source_VizWiz_SpectralVisualizer_h_12_PRIVATE_PROPERTY_OFFSET
+#define VizWiz_Source_VizWiz_SpectralVisualizer_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__TimeSynthComponent() { return STRUCT_OFFSET(ASpectralVisualizer, TimeSynthComponent); } \
+	FORCEINLINE static uint32 __PPO__TimeSynthClip() { return STRUCT_OFFSET(ASpectralVisualizer, TimeSynthClip); } \
+	FORCEINLINE static uint32 __PPO__SpectrumBars() { return STRUCT_OFFSET(ASpectralVisualizer, SpectrumBars); } \
+	FORCEINLINE static uint32 __PPO__SpectrumBarSpacing() { return STRUCT_OFFSET(ASpectralVisualizer, SpectrumBarSpacing); }
+
+
 #define VizWiz_Source_VizWiz_SpectralVisualizer_h_9_PROLOG
 #define VizWiz_Source_VizWiz_SpectralVisualizer_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeVizWiz_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xC9BCE189,
+				0xB21CA745,
 				0xC2BEBE60,
 				METADATA_PARAMS(nullptr, 0)
 			};
