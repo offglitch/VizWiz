@@ -17,6 +17,10 @@
 		{
 			"Name": "TimeSynth",
 			"Enabled": true
+		},
+		{
+			"Name": "ProceduralMeshes",
+			"Enabled": false
 		}
 	]
 }
