@@ -13,5 +13,6 @@ UCLASS()
 class VIZWIZ_API AVizWizGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+public:
+	AVizWizGameModeBase();
 };

@@ -8,6 +8,8 @@ public class VizWizEditorTarget : TargetRules
 	public VizWizEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
+		bOverrideBuildEnvironment = true;
+		CppStandard = CppStandardVersion.Cpp17;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		ExtraModuleNames.AddRange( new string[] { "VizWiz" } );
 	}

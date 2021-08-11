@@ -10,11 +10,20 @@ public class VizWiz : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "TimeSynth" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "TimeSynth", "HeadMountedDisplay" });
+		
+		//for a simpler path of #include
+		PublicIncludePaths.AddRange(new string[]
+        {
+			"VizWiz/Controller",
+			"VizWiz/SpectralPlayer",
+			"VizWiz/SpectralVisualizers",
+			"VizWiz/UI"
+        });
 
 		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 

@@ -3,3 +3,9 @@
 
 #include "VizWizGameModeBase.h"
 
+#include "VizWizController.h"
+
+AVizWizGameModeBase::AVizWizGameModeBase()
+{
+	PlayerControllerClass = AVizWizController::StaticClass();
+}
