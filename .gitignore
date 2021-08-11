@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# UE
+.vs
+*.sln
+DerivedDataCache/
+Intermediate/
+Saved/
+Binaries/
+Build/
+
+.idea
+/Clean.cmd
+/VizWiz.sln.DotSettings.user
+/VizWiz.uproject.DotSettings.user
