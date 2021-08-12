@@ -10,7 +10,7 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine",
-				"RuntimeMeshComponent"
+				"UMG"
 			]
 		}
 	],
@@ -24,22 +24,17 @@
 			"Enabled": false
 		},
 		{
-			"Name": "OculusVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Android"
-			]
+			"Name": "OpenVRExpansionPlugin",
+			"Enabled": false
 		},
 		{
-			"Name": "SteamVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux"
-			]
+			"Name": "VRExpansionPlugin",
+			"Enabled": true
 		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"WindowsNoEditor",
+		"WindowsNoEditorWin32"
 	]
 }
