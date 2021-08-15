@@ -105,7 +105,7 @@ void ASpectralVisualizer::OnConstruction(const FTransform& Transform)
 	}
 }
 
-void ASpectralVisualizer::UpdateMeshes(const TArray<float>& InSpectralData)
+void ASpectralVisualizer::UpdateMeshes(const TArray<float>& InSpectralData, const float InEnvelope)
 {
 	if (ISM->GetInstanceCount() == SpectrumBarNum) {
 		for (int32 i = 0; i < SpectrumBarNum; ++i) {

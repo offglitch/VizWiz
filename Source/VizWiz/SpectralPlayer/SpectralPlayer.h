@@ -25,7 +25,7 @@ class /*VIZWIZ_API*/ ASpectralPlayer : public AActor
 public:
 	//Delegates for player construction and spectrum update
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerConstruction);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSpectrumUpdate, const TArray<float>&, SpectralData);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnSpectrumUpdate, const TArray<float>&, SpectralData, const float, Envelope);
 
 	UPROPERTY(BlueprintAssignable)
 	FOnPlayerConstruction OnPlayerConstruction;

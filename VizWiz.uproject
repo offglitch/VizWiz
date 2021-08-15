@@ -24,12 +24,13 @@
 			"Enabled": false
 		},
 		{
-			"Name": "OpenVRExpansionPlugin",
-			"Enabled": false
-		},
-		{
-			"Name": "VRExpansionPlugin",
-			"Enabled": true
+			"Name": "OculusOpenXR",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Android"
+			]
 		}
 	],
 	"TargetPlatforms": [

@@ -77,5 +77,5 @@ protected:
 
 	// Called by Spectrum Update delegate
 	UFUNCTION()
-	void UpdateMeshes(const TArray<float>& InSpectralData);
+	void UpdateMeshes(const TArray<float>& InSpectralData, const float InEnvelope);
 };

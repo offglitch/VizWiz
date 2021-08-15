@@ -69,7 +69,7 @@ void ASpectralPlayer::PlayerPlayback(float SynthPlaybackTimeSeconds)
 			maxMagnitude = FMath::FInterpTo(maxMagnitude, KINDA_SMALL_NUMBER, GetWorld()->GetDeltaSeconds(), envelope);
 		}
 		// broadcast for listeners
-		OnSpectrumUpdate.Broadcast(LerpSpectralData);
+		OnSpectrumUpdate.Broadcast(LerpSpectralData, envelope);
 	}
 }
 
