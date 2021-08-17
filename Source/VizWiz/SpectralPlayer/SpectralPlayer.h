@@ -83,8 +83,6 @@ protected:
 	TArray<float> LerpSpectralData;
 	TArray<float> MaxSpectralData;
 
-	//Player state
-	EPlayerState PlayerState;
 	//Current clip handle
 	FTimeSynthClipHandle ClipHandle;
 protected:

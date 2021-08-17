@@ -9,7 +9,6 @@ ASpectralPlayer::ASpectralPlayer()
 	, LinearInterpWeight(0.1f)
 	, SpectrumFequencyLimits(20, 20000)
 	, FFTSize(ETimeSynthFFTSize::Large_1024)
-	, PlayerState(EPlayerState::Stopped)
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
@@ -98,22 +97,21 @@ void ASpectralPlayer::Play(int32 ClipIndex)
 	{
 		CurrentClipIndex = ClipIndex;
 		// stop if playing
-		if (PlayerState == EPlayerState::Playing)
-			TimeSynthComponent->StopClip(ClipHandle, ETimeSynthEventClipQuantization::Global);
+		if (TimeSynthComponent->HasActiveClips())
+		{
+			TimeSynthComponent->StopClip(ClipHandle, ETimeSynthEventClipQuantization::None);
+		}
 		//reset data
 		ResetSpectralData();
 		// play with saving clip handle
 		ClipHandle = TimeSynthComponent->PlayClip(TimeSynthClips[CurrentClipIndex]);
-		//set PlayerStart (FTimeSynthClipHandle has only operator==)
-		PlayerState = (ClipHandle == FTimeSynthClipHandle() ? EPlayerState::Stopped : EPlayerState::Playing);
 	}
 }
 
 void ASpectralPlayer::Stop()
 {
-	if (PlayerState == EPlayerState::Playing)
+	if (TimeSynthComponent->HasActiveClips())
 	{
-		TimeSynthComponent->StopClip(ClipHandle, ETimeSynthEventClipQuantization::Global);
-		PlayerState = EPlayerState::Stopped;
+		TimeSynthComponent->StopClip(ClipHandle, ETimeSynthEventClipQuantization::None);
 	}
 }

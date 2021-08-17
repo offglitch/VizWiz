@@ -10,7 +10,7 @@ public class VizWiz : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "TimeSynth", "HeadMountedDisplay" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "TimeSynth", "AudioMixer", "HeadMountedDisplay" });
 		
 		//for a simpler path of #include
 		PublicIncludePaths.AddRange(new string[]
