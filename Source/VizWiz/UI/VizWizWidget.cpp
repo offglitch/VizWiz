@@ -67,9 +67,9 @@ void UVizWizWidget::UpdateList()
 void UVizWizWidget::ChangeClip(int32 NewClipIndex)
 {
 	//if the new index differs
-	if (ItemIndex != NewClipIndex)
+	// if (ItemIndex != NewClipIndex)
 	{
-		if (ItemIndex >= 0 && ItemIndex < ItemList.Num())
+		if (ItemIndex != NewClipIndex && ItemIndex >= 0 && ItemIndex < ItemList.Num())
 		{
 			//take current item and set color
 			const auto curItem = Cast<UVizWizWidget_ListItem>(SongList->GetChildAt(ItemIndex));
