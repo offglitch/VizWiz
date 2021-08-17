@@ -2,15 +2,15 @@
 	"source": "UE",
 	"applications": [
 		{
-			"app_key": "application.generated.ue.vizwiz-15973114.ue4editor.exe",
+			"app_key": "application.generated.ue.vizwizvr-15973114.ue4editor.exe",
 			"launch_type": "url",
 			"url": "steam://launch/",
-			"action_manifest_path": "C:/Users/Majid/Desktop/MSc/Github/VizWiz/Config/SteamVRBindings/steamvr_manifest.json",
+			"action_manifest_path": "C:/Users/Majid/Desktop/MSc/Github/Updates/VizWiz/Config/SteamVRBindings/steamvr_manifest.json",
 			"strings":
 			{
 				"en_us":
 				{
-					"name": "VizWiz-15973114 [UE Editor]"
+					"name": "VizWizVR-15973114 [UE Editor]"
 				}
 			}
 		}
