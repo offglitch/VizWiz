@@ -1,6 +1,10 @@
 # VizWiz
 
+
 VizWiz is a VR Music Visualizer developed with C++ and UE4. It makes use of UE's TimeSynthComponent to perform spectral analysis on a given audio file. Although intended to be experienced in VR, the application can also run and build on any capable machine for a desktop FPS experience.
+
+
+You can check out a demo of it [here](https://youtu.be/PE6eqpazhws).
 
 ### Can I try it out? 
 
